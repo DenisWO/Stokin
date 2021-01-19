@@ -1,0 +1,20 @@
+﻿@model Stokin.Models.Product
+
+@{
+  ViewData["Title"] = "Create";
+}
+
+<h1>Adicionar produto</h1>
+
+<hr />
+<form asp-action="Create">
+  <partial name="_ProductData" />
+  <div class="form-group mb-3 col-md-4">
+    <input type="submit" value="Criar" class="btn btn-success" />
+    <a asp-action="Index" class="btn btn-primary">Voltar</a>
+  </div>
+</form>
+
+@section Scripts {
+  @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
