@@ -1,0 +1,20 @@
+﻿@model Stokin.Models.Client
+
+@{
+  ViewData["Title"] = "Create";
+}
+
+<h1>Adicionar cliente</h1>
+<hr />
+<form asp-action="Create">
+  <partial name="_ClientData" />
+  <div class="form-group mb-3 col-md-4">
+    <input type="submit" value="Criar" class="btn btn-success" />
+    <a asp-action="Index" class="btn btn-primary">Voltar</a>
+  </div>
+</form>
+
+@section Scripts {
+  @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

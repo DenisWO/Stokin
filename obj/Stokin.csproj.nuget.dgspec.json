@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\Stokin_\\Stokin.csproj": {}
+    "D:\\GitHub\\Stokin\\Stokin.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\Stokin_\\Stokin.csproj": {
+    "D:\\GitHub\\Stokin\\Stokin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Stokin_\\Stokin.csproj",
+        "projectUniqueName": "D:\\GitHub\\Stokin\\Stokin.csproj",
         "projectName": "Stokin",
-        "projectPath": "D:\\GitHub\\Stokin_\\Stokin.csproj",
+        "projectPath": "D:\\GitHub\\Stokin\\Stokin.csproj",
         "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Stokin_\\obj\\",
+        "outputPath": "D:\\GitHub\\Stokin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,6 +61,10 @@
               "version": "[5.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[5.0.2, )"
             },
