@@ -13,6 +13,7 @@ namespace Stokin.Models
             this.Id = Guid.NewGuid();
         }
 
+        [Key]
         public Guid Id { get; set; }
 
         [Required(ErrorMessage = "Nome é obrigatório")]

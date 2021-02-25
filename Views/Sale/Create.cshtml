@@ -1,0 +1,47 @@
+﻿@model Stokin.Models.Sale
+
+<h4>Venda</h4>
+<hr />
+<form asp-action="Create">
+  <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" aria-describedby="button-addon2" name="searchString">
+    <div class="input-group-append">
+      <button class="btn btn-outline-primary" type="button" id="button-addon2" onclick="searchClientClick">Pesquisar</button>
+    </div>
+  </div>
+  <div class="form-group mb-3 col-md-12" hidden>
+    <label asp-for="Client" class="control-label"></label>
+    <input asp-for="Client" class="form-control" />
+    <span asp-validation-for="Client" class="text-danger"></span>
+  </div>
+  <div class="input-group mb-3">
+    <div class="col-md-4">
+      <label asp-for="DateSale" class="control-label"></label>
+      <input asp-for="DateSale" class="form-control" />
+      <span asp-validation-for="DateSale" class="text-danger"></span>
+    </div>
+    <div class="col-md-4">
+      <label asp-for="Value" class="control-label"></label>
+      <input asp-for="Value" class="form-control" value="0,00" />
+      <span asp-validation-for="Value" class="text-danger"></span>
+    </div>
+  </div>
+  <div class="form-group mb-3 col-md-4">
+    <input type="submit" value="Criar" class="btn btn-success"/>
+    <a asp-action="Index" class="btn btn-primary">Voltar</a>
+  </div>
+
+</form>
+
+@section Scripts {
+  @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+  <script>
+    function handleClick() {
+      document.getElementById("insertItem").hidden = false;
+    }
+  </script>
+
+}
+
+

@@ -1,0 +1,38 @@
+﻿@model Stokin.Models.ItemSale
+
+
+@{
+    ViewData["Title"] = "Create";
+    List<Product> products = (List<Product>)TempData["Products"];
+}
+
+<div class="col-md-12">
+  <form asp-action="Create" asp-controller="ItemSale">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <label asp-for="Product" class="control-label"></label>
+    <select class="form-control" id="client" asp-for="Product">
+      <option value="">Selecione um cliente</option>
+      @foreach (var product in products)
+      {
+        <option value="@product.Id">@product.Name</option>
+      }
+    </select>
+    <span asp-validation-for="Product" class="text-danger"></span>
+    <div class="input-group mb-3">
+      <div class="col-md-4">
+        <label asp-for="Quantity" class="control-label"></label>
+        <input asp-for="Quantity" class="form-control" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+      </div>
+      <div class="col-md-4">
+        <label asp-for="Price" class="control-label"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+      </div>
+    </div>
+    <div class="form-group mb-3 col-md-4">
+      <input type="button" value="Criar" class="btn btn-success" />
+    </div>
+  </form>
+</div>
+

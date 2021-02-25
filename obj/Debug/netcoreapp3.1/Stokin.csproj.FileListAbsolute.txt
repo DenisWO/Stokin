@@ -198,3 +198,11 @@ D:\GitHub\Stokin\obj\Debug\netcoreapp3.1\Razor\Views\Client\Details.cshtml.g.cs
 D:\GitHub\Stokin\obj\Debug\netcoreapp3.1\Razor\Views\Client\Edit.cshtml.g.cs
 D:\GitHub\Stokin\obj\Debug\netcoreapp3.1\Razor\Views\Client\_ClientDetails.cshtml.g.cs
 D:\GitHub\Stokin\obj\Debug\netcoreapp3.1\Razor\Views\Client\_ClientData.cshtml.g.cs
+D:\GitHub\Stokin\obj\Debug\netcoreapp3.1\Razor\Views\Sale\Create.cshtml.g.cs
+D:\GitHub\Stokin\obj\Debug\netcoreapp3.1\Razor\Views\Sale\Delete.cshtml.g.cs
+D:\GitHub\Stokin\obj\Debug\netcoreapp3.1\Razor\Views\Sale\Details.cshtml.g.cs
+D:\GitHub\Stokin\obj\Debug\netcoreapp3.1\Razor\Views\Sale\Edit.cshtml.g.cs
+D:\GitHub\Stokin\obj\Debug\netcoreapp3.1\Razor\Views\Sale\Index.cshtml.g.cs
+D:\GitHub\Stokin\obj\Debug\netcoreapp3.1\Razor\Views\ItemSale\Create.cshtml.g.cs
+D:\GitHub\Stokin\obj\Debug\netcoreapp3.1\Razor\Views\ItemSale\Index.cshtml.g.cs
+D:\GitHub\Stokin\obj\Debug\netcoreapp3.1\Razor\Views\Sale\_CreateItem.cshtml.g.cs
